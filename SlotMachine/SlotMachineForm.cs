@@ -16,14 +16,8 @@ namespace SlotMachine
         private int playerMoney = 1000;
         private int winnings = 0;
         private int jackpot = 5000;
-        private float turn = 0.0f;
         private int playerBet = 0;
-        private float winNumber = 0.0f;
-        private float lossNumber = 0.0f;
         private string[] spinResult;
-        private string fruits = "";
-        private float winRatio = 0.0f;
-        private float lossRatio = 0.0f;
         private int grapes = 0;
         private int bananas = 0;
         private int oranges = 0;
@@ -43,17 +37,11 @@ namespace SlotMachine
         /* Utility function to show Player Stats */
         private void showPlayerStats()
         {
-            winRatio = winNumber / turn;
-            lossRatio = lossNumber / turn;
-            string stats = "";
-            stats += ("Jackpot: " + jackpot + "\n");
-            stats += ("Player Money: " + playerMoney + "\n");
-            stats += ("Turn: " + turn + "\n");
-            stats += ("Wins: " + winNumber + "\n");
-            stats += ("Losses: " + lossNumber + "\n");
-            stats += ("Win Ratio: " + (winRatio * 100) + "%\n");
-            stats += ("Loss Ratio: " + (lossRatio * 100) + "%\n");
-            MessageBox.Show(stats, "Player Stats");
+            CreditLabel.Text = playerMoney.ToString();
+            WinningsLabel.Text = winnings.ToString();
+            JackpotLabel.Text = jackpot.ToString();
+            CurrentBetLabel.Text = playerBet.ToString();
+            checkMoney();
         }
 
         /* Utility function to reset all fruit tallies*/
@@ -73,13 +61,13 @@ namespace SlotMachine
         private void resetAll()
         {
             playerMoney = 1000;
+            playerBet = 10;
             winnings = 0;
             jackpot = 5000;
-            turn = 0;
-            playerBet = 0;
-            winNumber = 0;
-            lossNumber = 0;
-            winRatio = 0.0f;
+            checkMoney();
+            ReelPictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject("");
+            ReelPictureBox2.Image = (Image)Properties.Resources.ResourceManager.GetObject("");
+            ReelPictureBox3.Image = (Image)Properties.Resources.ResourceManager.GetObject("");
         }
 
         /* Check to see if the player won the jackpot */
@@ -90,38 +78,20 @@ namespace SlotMachine
             var jackPotWin = this.random.Next(51) + 1;
             if (jackPotTry == jackPotWin)
             {
-                MessageBox.Show("You Won the $" + jackpot + " Jackpot!!","Jackpot!!");
+                MessageBox.Show("You Won the $" + jackpot + " Jackpot!!", "Jackpot!!");
                 playerMoney += jackpot;
                 jackpot = 1000;
             }
-        }
-
-        /* Utility function to show a win message and increase player money */
-        private void showWinMessage()
-        {
-            playerMoney += winnings;
-            MessageBox.Show("You Won: $" + winnings, "Winner!");
-            resetFruitTally();
-            checkJackPot();
-        }
-
-        /* Utility function to show a loss message and reduce player money */
-        private void showLossMessage()
-        {
-            playerMoney -= playerBet;
-            MessageBox.Show("You Lost!", "Loss!");
-            resetFruitTally();
         }
 
         /* Utility function to check if a value falls within a range of bounds */
         private bool checkRange(int value, int lowerBounds, int upperBounds)
         {
             return (value >= lowerBounds && value <= upperBounds) ? true : false;
-            
+
         }
 
-        /* When this function is called it determines the betLine results.
-    e.g. Bar - Orange - Banana */
+        /* When this function is called it determines the betLine results. */
         private string[] Reels()
         {
             string[] betLine = { " ", " ", " " };
@@ -131,38 +101,48 @@ namespace SlotMachine
             {
                 outCome[spin] = this.random.Next(65) + 1;
 
-               if (checkRange(outCome[spin], 1, 27)) {  // 41.5% probability
+                if (checkRange(outCome[spin], 1, 27))
+                {  // 41.5% probability
                     betLine[spin] = "blank";
                     blanks++;
-                    }
-                else if (checkRange(outCome[spin], 28, 37)){ // 15.4% probability
-                    betLine[spin] = "Grapes";
+                }
+                else if (checkRange(outCome[spin], 28, 37))
+                { // 15.4% probability
+                    betLine[spin] = "grapes";
                     grapes++;
                 }
-                else if (checkRange(outCome[spin], 38, 46)){ // 13.8% probability
-                    betLine[spin] = "Banana";
+                else if (checkRange(outCome[spin], 38, 46))
+                { // 13.8% probability
+                    betLine[spin] = "banana";
                     bananas++;
                 }
-                else if (checkRange(outCome[spin], 47, 54)){ // 12.3% probability
-                    betLine[spin] = "Orange";
+                else if (checkRange(outCome[spin], 47, 54))
+                { // 12.3% probability
+                    betLine[spin] = "orange";
                     oranges++;
                 }
-                else if (checkRange(outCome[spin], 55, 59)){ //  7.7% probability
-                    betLine[spin] = "Cherry";
+                else if (checkRange(outCome[spin], 55, 59))
+                { //  7.7% probability
+                    betLine[spin] = "cherry";
                     cherries++;
                 }
-                else if (checkRange(outCome[spin], 60, 62)){ //  4.6% probability
-                    betLine[spin] = "Bar";
+                else if (checkRange(outCome[spin], 60, 62))
+                { //  4.6% probability
+                    betLine[spin] = "bar";
                     bars++;
                 }
-                else if (checkRange(outCome[spin], 63, 64)){ //  3.1% probability
-                    betLine[spin] = "Bell";
+                else if (checkRange(outCome[spin], 63, 64))
+                { //  3.1% probability
+                    betLine[spin] = "bell";
                     bells++;
                 }
-                else if (checkRange(outCome[spin], 65, 65)){ //  1.5% probability
-                    betLine[spin] = "Seven";
+                else if (checkRange(outCome[spin], 65, 65))
+                { //  1.5% probability
+                    betLine[spin] = "seven";
                     sevens++;
                 }
+               ((PictureBox)Controls.Find(String.Concat("ReelPictureBox", (spin + 1)), true)[0])
+                    .Image = (Image)Properties.Resources.ResourceManager.GetObject(betLine[spin]);
 
             }
             return betLine;
@@ -237,51 +217,83 @@ namespace SlotMachine
                 {
                     winnings = playerBet * 1;
                 }
-                winNumber++;
-                showWinMessage();
+                playerMoney += winnings;
+                checkJackPot();
             }
             else
             {
-                lossNumber++;
-                showLossMessage();
+                winnings = 0;
+                playerMoney -= playerBet;
             }
-
         }
 
         private void SpinPictureBox_Click(object sender, EventArgs e)
         {
-            playerBet = 10; // default bet amount
-
-            if (playerMoney == 0)
+            if (playerBet <= playerMoney)
             {
-                if (MessageBox.Show("You ran out of Money! \nDo you want to play again?","Out of Money!",MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    resetAll();
-                    showPlayerStats();
-                }
-            }
-            else if (playerBet > playerMoney)
-            {
-                MessageBox.Show("You don't have enough Money to place that bet.", "Insufficient Funds");
-            }
-            else if (playerBet < 0)
-            {
-                MessageBox.Show("All bets must be a positive $ amount.", "Incorrect Bet");
-            }
-            else if (playerBet <= playerMoney)
-            {
+                jackpot += (int)Math.Ceiling((double)playerBet / 10);
                 spinResult = Reels();
-                fruits = spinResult[0] + " - " + spinResult[1] + " - " + spinResult[2];
-                MessageBox.Show(fruits);
                 determineWinnings();
-                turn++;
+                resetFruitTally();
                 showPlayerStats();
             }
             else
             {
-                MessageBox.Show("Please enter a valid bet amount");
+                SpinPictureBox.Enabled = false;
+                SpinPictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("spin_disabled");
             }
         }
-    }
 
+        private void SpinPictureBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            SpinPictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("spin_pressed");
+        }
+
+        private void SpinPictureBox_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (SpinPictureBox.Enabled)
+            {
+                SpinPictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("spin");
+            }
+        }
+
+        private void ResetPictureBox_Click(object sender, EventArgs e)
+        {
+            resetAll();
+            showPlayerStats();
+        }
+
+        private void ExitPictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void SlotMachineForm_Load(object sender, EventArgs e)
+        {
+            resetAll();
+            showPlayerStats();
+        }
+
+        private void BetPictureBox_Click(object sender, EventArgs e)
+        {
+            playerBet = Int32.Parse(((PictureBox)sender).Name.Substring(13));
+            CurrentBetLabel.Text = playerBet.ToString();
+            checkMoney();
+        }
+
+        private void checkMoney()
+        {
+            if (playerMoney == 0 || playerBet > playerMoney)
+            {
+                SpinPictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("spin_disabled");
+                SpinPictureBox.Enabled = false;
+            }
+            else
+            {
+                SpinPictureBox.Enabled = true;
+                SpinPictureBox.Image = (Image)Properties.Resources.ResourceManager.GetObject("spin");
+            }
+        }
+
+    }
 }
