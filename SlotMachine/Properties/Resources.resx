@@ -226,4 +226,10 @@
   <data name="Reel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reel3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FFXIV OST Gold Saucer Theme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WinSound1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WinSound1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

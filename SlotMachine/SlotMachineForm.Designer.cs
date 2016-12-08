@@ -306,7 +306,7 @@
             this.JackpotDescLabel.Name = "JackpotDescLabel";
             this.JackpotDescLabel.Size = new System.Drawing.Size(361, 23);
             this.JackpotDescLabel.TabIndex = 25;
-            this.JackpotDescLabel.Text = "* Jackpot available on bets over 10 *";
+            this.JackpotDescLabel.Text = "* Jackpot available on bets of 25 or higher *";
             this.JackpotDescLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // SlotMachineForm

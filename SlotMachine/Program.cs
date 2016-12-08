@@ -11,6 +11,7 @@ using System.Windows.Forms;
 /// Student # 200330143
 /// Created on December 8th, 2016
 /// A basic 3 reel slot machine simulator 
+/// Music is property of Square Enix
 /// </summary>
 namespace SlotMachine
 {

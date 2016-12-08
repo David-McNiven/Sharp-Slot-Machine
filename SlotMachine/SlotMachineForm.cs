@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,7 @@ using System.Windows.Forms;
 /// Student # 200330143
 /// Created on December 8th, 2016
 /// A basic 3 reel slot machine simulator 
+/// Music is property of Square Enix
 /// </summary>
 namespace SlotMachine
 {
@@ -33,6 +36,8 @@ namespace SlotMachine
         private int bells = 0;
         private int sevens = 0;
         private int blanks = 0;
+        private Stream bgm = Properties.Resources.Theme;
+        private SoundPlayer player;
 
         private Random random = new Random();
 
@@ -279,13 +284,15 @@ namespace SlotMachine
         }
 
         /// <summary>
-        /// resets everything to defaut values on form load, probably redundant but there just to be safe
+        /// resets everything to defaut values on form load and starts background music
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void SlotMachineForm_Load(object sender, EventArgs e)
         {
             resetAll();
+            player = new SoundPlayer(bgm);
+            player.PlayLooping();
         }
 
         /// <summary>
