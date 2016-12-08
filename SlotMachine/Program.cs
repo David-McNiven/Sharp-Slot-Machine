@@ -4,6 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Sharp Slot Machine
+/// Original Framework provided by Tom Siliopoulos
+/// Modifed by David McNiven
+/// Student # 200330143
+/// Created on December 8th, 2016
+/// A basic 3 reel slot machine simulator 
+/// </summary>
 namespace SlotMachine
 {
     static class Program

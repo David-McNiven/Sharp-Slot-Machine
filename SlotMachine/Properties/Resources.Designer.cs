@@ -63,9 +63,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap banana {
+        internal static System.Drawing.Bitmap Banana {
             get {
-                object obj = ResourceManager.GetObject("banana", resourceCulture);
+                object obj = ResourceManager.GetObject("Banana", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bar {
+        internal static System.Drawing.Bitmap Bar {
             get {
-                object obj = ResourceManager.GetObject("bar", resourceCulture);
+                object obj = ResourceManager.GetObject("Bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bell {
+        internal static System.Drawing.Bitmap Bell {
             get {
-                object obj = ResourceManager.GetObject("bell", resourceCulture);
+                object obj = ResourceManager.GetObject("Bell", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet1 {
+        internal static System.Drawing.Bitmap Bet1 {
             get {
-                object obj = ResourceManager.GetObject("bet1", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet10 {
+        internal static System.Drawing.Bitmap Bet1_pressed {
             get {
-                object obj = ResourceManager.GetObject("bet10", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet1_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet100 {
+        internal static System.Drawing.Bitmap Bet10 {
             get {
-                object obj = ResourceManager.GetObject("bet100", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet2 {
+        internal static System.Drawing.Bitmap Bet10_pressed {
             get {
-                object obj = ResourceManager.GetObject("bet2", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet10_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet25 {
+        internal static System.Drawing.Bitmap Bet100 {
             get {
-                object obj = ResourceManager.GetObject("bet25", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet5 {
+        internal static System.Drawing.Bitmap Bet100_pressed {
             get {
-                object obj = ResourceManager.GetObject("bet5", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet100_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet50 {
+        internal static System.Drawing.Bitmap Bet2 {
             get {
-                object obj = ResourceManager.GetObject("bet50", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bet500 {
+        internal static System.Drawing.Bitmap Bet2_pressed {
             get {
-                object obj = ResourceManager.GetObject("bet500", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet2_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap blank {
+        internal static System.Drawing.Bitmap Bet25 {
             get {
-                object obj = ResourceManager.GetObject("blank", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cherry {
+        internal static System.Drawing.Bitmap Bet25_pressed {
             get {
-                object obj = ResourceManager.GetObject("cherry", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet25_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap grapes {
+        internal static System.Drawing.Bitmap Bet5 {
             get {
-                object obj = ResourceManager.GetObject("grapes", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap orange {
+        internal static System.Drawing.Bitmap Bet5_pressed {
             get {
-                object obj = ResourceManager.GetObject("orange", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet5_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +223,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap powerbutton {
+        internal static System.Drawing.Bitmap Bet50 {
             get {
-                object obj = ResourceManager.GetObject("powerbutton", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap reset {
+        internal static System.Drawing.Bitmap Bet50_pressed {
             get {
-                object obj = ResourceManager.GetObject("reset", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet50_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +243,139 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap seven {
+        internal static System.Drawing.Bitmap Bet500 {
             get {
-                object obj = ResourceManager.GetObject("seven", resourceCulture);
+                object obj = ResourceManager.GetObject("Bet500", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bet500_pressed {
+            get {
+                object obj = ResourceManager.GetObject("Bet500_pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blank {
+            get {
+                object obj = ResourceManager.GetObject("Blank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cherry {
+            get {
+                object obj = ResourceManager.GetObject("Cherry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Exit {
+            get {
+                object obj = ResourceManager.GetObject("Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Exit_pressed {
+            get {
+                object obj = ResourceManager.GetObject("Exit_pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Grapes {
+            get {
+                object obj = ResourceManager.GetObject("Grapes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orange {
+            get {
+                object obj = ResourceManager.GetObject("Orange", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reel1 {
+            get {
+                object obj = ResourceManager.GetObject("Reel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reel2 {
+            get {
+                object obj = ResourceManager.GetObject("Reel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reel3 {
+            get {
+                object obj = ResourceManager.GetObject("Reel3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reset {
+            get {
+                object obj = ResourceManager.GetObject("Reset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reset_pressed {
+            get {
+                object obj = ResourceManager.GetObject("Reset_pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Seven {
+            get {
+                object obj = ResourceManager.GetObject("Seven", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +393,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap spin {
+        internal static System.Drawing.Bitmap Spin {
             get {
-                object obj = ResourceManager.GetObject("spin", resourceCulture);
+                object obj = ResourceManager.GetObject("Spin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +403,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap spin_disabled {
+        internal static System.Drawing.Bitmap Spin_disabled {
             get {
-                object obj = ResourceManager.GetObject("spin_disabled", resourceCulture);
+                object obj = ResourceManager.GetObject("Spin_disabled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +413,9 @@ namespace SlotMachine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap spin_pressed {
+        internal static System.Drawing.Bitmap Spin_pressed {
             get {
-                object obj = ResourceManager.GetObject("spin_pressed", resourceCulture);
+                object obj = ResourceManager.GetObject("Spin_pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
